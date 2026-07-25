@@ -10,7 +10,7 @@ import { SocketIoConfig } from './config/socket-io.config';
 import { WrappedSocket } from './socket-io.service';
 
 /** Socket factory */
-export function SocketFactory(config: SocketIoConfig, appRef: ApplicationRef) {
+function SocketFactory(config: SocketIoConfig, appRef: ApplicationRef) {
   return new WrappedSocket(config, appRef);
 }
 
